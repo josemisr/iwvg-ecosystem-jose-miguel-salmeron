@@ -1,0 +1,13 @@
+language: java
+branches:
+  only:
+    - develop
+    - /^release-[0-999].[0-999]$/
+    - master
+notifications:
+  email:
+    recipients:
+      - digajjj21@gmail.com
+script:
+  #Test unitario y de integracion en perfil DEV, con cobertura
+  - mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify
