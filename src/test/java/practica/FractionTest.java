@@ -23,8 +23,13 @@ class FractionTest {
     }
 
     @Test
-    void testIsPropia() {
-        assertEquals(false, fraction.isPropia());
+    void testIsProper() {
+        assertEquals(false, fraction.isProper());
+    }
+
+    @Test
+    void testIsImproper() {
+        assertEquals(true, fraction.isImproper());
     }
 
 }

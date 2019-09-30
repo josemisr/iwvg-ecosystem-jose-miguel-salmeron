@@ -53,8 +53,12 @@ public class Fraction {
         return denominator;
     }
 
-    public boolean isPropia() {
+    public boolean isProper() {
         return denominator > numerator;
+    }
+
+    public boolean isImproper() {
+        return !isProper();
     }
 
 }
