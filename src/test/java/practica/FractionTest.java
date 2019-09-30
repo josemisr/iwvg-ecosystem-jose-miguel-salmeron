@@ -16,9 +16,15 @@ class FractionTest {
     void testGetNumerator() {
         assertEquals(5, fraction.getNumerator());
     }
+
     @Test
     void testGetDenominator() {
         assertEquals(2, fraction.getDenominator());
+    }
+
+    @Test
+    void testIsPropia() {
+        assertEquals(false, fraction.isPropia());
     }
 
 }
