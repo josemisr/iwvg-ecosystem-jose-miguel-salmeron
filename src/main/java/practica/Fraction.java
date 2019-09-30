@@ -53,4 +53,16 @@ public class Fraction {
         return denominator;
     }
 
+    public boolean proper() {
+        return denominator > numerator;
+    }
+
+    public boolean improper() {
+        return !proper();
+    }
+
+    public boolean equivalent(Fraction fractionToCompare) {
+        return this.numerator/this.denominator >= fractionToCompare.numerator/fractionToCompare.denominator ;
+    }
+
 }
