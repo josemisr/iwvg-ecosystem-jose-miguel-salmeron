@@ -36,4 +36,9 @@ public class UserTest {
     void testGetFamilyName() {
         assertEquals("Urbanos", this.user.getFamilyName());
     }
+
+    @Test
+    void testUpperFullName() {
+        assertEquals("GEMMA URBANOS", this.user.getUpperFullName());
+    }
 }
