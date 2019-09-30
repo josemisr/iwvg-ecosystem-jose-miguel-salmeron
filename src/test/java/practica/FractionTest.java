@@ -23,13 +23,19 @@ class FractionTest {
     }
 
     @Test
-    void testIsProper() {
-        assertEquals(false, fraction.isProper());
+    void testProper() {
+        assertEquals(false, fraction.proper());
     }
 
     @Test
-    void testIsImproper() {
-        assertEquals(true, fraction.isImproper());
+    void testImproper() {
+        assertEquals(true, fraction.improper());
+    }
+
+    @Test
+    void testEquivalent() {
+        Fraction fractionToCompare = new Fraction(9, 4);
+        assertEquals(true, fraction.equivalent(fractionToCompare));
     }
 
 }
