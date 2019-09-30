@@ -41,6 +41,14 @@ public class Point {
         return this.y;
     }
 
+    public void updateX(int newX) {
+        this.x = newX;
+    }
+
+    public void updateY(int newY) {
+        this.y = newY;
+    }
+
     @Override
     public String toString() {
         return "Point{" +

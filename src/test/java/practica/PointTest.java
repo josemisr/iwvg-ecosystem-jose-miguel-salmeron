@@ -50,4 +50,18 @@ class PointTest {
         assertEquals(2, point.getY());
     }
 
+    @Test
+    void testUpdateX() {
+        point.updateX(3);
+        assertEquals(3, point.getX());
+        assertEquals(3, point.getY());
+    }
+
+    @Test
+    void testUpdateY() {
+        point.updateY(2);
+        assertEquals(2, point.getX());
+        assertEquals(2, point.getY());
+    }
+
 }
