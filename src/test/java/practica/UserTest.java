@@ -41,4 +41,10 @@ public class UserTest {
     void testUpperFullName() {
         assertEquals("GEMMA URBANOS", this.user.getUpperFullName());
     }
+
+    @Test
+    void testInitialsFullName() {
+        assertEquals("G.U", this.user.initialsFullName());
+    }
+
 }
