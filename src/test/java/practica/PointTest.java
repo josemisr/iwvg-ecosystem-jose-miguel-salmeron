@@ -64,4 +64,15 @@ class PointTest {
         assertEquals(2, point.getY());
     }
 
+    @Test
+    void testHigherCoordinateY() {
+        assertEquals(3, point.higherCoordinate());
+    }
+
+    @Test
+    void testHigherCoordinateX() {
+        point.updateX(4);
+        assertEquals(4, point.higherCoordinate());
+    }
+
 }

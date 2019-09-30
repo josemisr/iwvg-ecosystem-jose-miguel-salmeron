@@ -49,6 +49,15 @@ public class Point {
         this.y = newY;
     }
 
+    public int higherCoordinate() {
+        if(this.y >= this.x){
+            return this.y;
+        }
+        else{
+            return this.x;
+        }
+    }
+
     @Override
     public String toString() {
         return "Point{" +
