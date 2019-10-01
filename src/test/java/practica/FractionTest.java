@@ -34,7 +34,7 @@ class FractionTest {
 
     @Test
     void testEquivalent() {
-        Fraction fractionToCompare = new Fraction(9, 4);
+        Fraction fractionToCompare = new Fraction(10, 4);
         assertEquals(true, fraction.equivalent(fractionToCompare));
     }
 

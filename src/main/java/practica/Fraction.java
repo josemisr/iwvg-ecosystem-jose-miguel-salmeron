@@ -62,7 +62,7 @@ public class Fraction {
     }
 
     public boolean equivalent(Fraction fractionToCompare) {
-        return this.numerator/this.denominator >= fractionToCompare.numerator/fractionToCompare.denominator ;
+        return (double)this.numerator/(double)this.denominator == (double)fractionToCompare.numerator/(double)fractionToCompare.denominator;
     }
 
 }
